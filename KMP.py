@@ -27,7 +27,7 @@ def KMPSearch(pat, txt):
 def computeFailArray(pat, patlen):
     k = 0
     j = 1
-    fail = [0]
+    fail = [0]*len(pat)
  
     while j < patlen:
         if pat[j] == pat[k]:
@@ -43,6 +43,7 @@ def computeFailArray(pat, patlen):
     return fail
 
 if __name__ == "__main__":
-    txt = "ABABDABACDABABCABAB"
-    pat = "CABAB"
-    KMPSearch(pat, txt)
+    txt = '(@   in ,downloads ) https://t.co/c5CJ2ced8o' 
+    pat = "downloads"
+    if KMPSearch(pat, txt):
+        print True
