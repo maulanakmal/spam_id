@@ -1,0 +1,8 @@
+untuk membuka file php pada windows bisa menggunaka xampp dan pindah kan file index.php dan main.php ke folder root pada xampp
+
+untuk menjalankan server flask
+install flask
+install tweepy
+masuk ke folder spam_id
+masukan "export FLASK_APP=main.py" pada terminal
+masukan "flask run" pada terminal

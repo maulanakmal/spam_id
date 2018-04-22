@@ -232,7 +232,7 @@ def boyerMoore(keyword):
     myStream.sample()
     processedData = []
     for i in data:
-        if stringSearch(keyword, i[0].encode('ascii','ignore')):
+        if stringSearch(keyword, i[0]):
             processedData += [i]
     return jsonify(processedData)
 
